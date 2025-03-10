@@ -20,42 +20,6 @@
     color: #00274C;
 }
 
-h1, h2, h3{
-    font-family: 'Oswald';
-    padding: 10px;
-    color: #00274C;
-}
-
-h1{
-    font-size: 3em;
-}
-
-h2{
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-p, ol, ul, figcaption{
-    font-family: 'Montserrat';
-    padding: 10px;
-}
-
-ol, ul{
-    list-style-position: inside;
-}
-
-li{
-    line-height: 1.5;
-    padding: 2px;
-}
-
-figcaption{
-    font-style: italic;
-}
-
 header{
     display: grid;
     grid-template-columns: fit-content(60px) 3fr; 
@@ -75,11 +39,17 @@ nav ul{
     display: grid;
     grid-template-columns: fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%);
     padding: 10px;
+    align-items: center;
 }
 
 nav ul li a{
     padding: 10px;
-    color:#FFCB05;
+    color: #FFCB05;
+    white-space: normal;
+    text-align: center;
+    word-break: normal;
+    overflow-wrap: break-word;
+    display: block;
 }
 
 nav ul li a:hover{
@@ -87,6 +57,63 @@ nav ul li a:hover{
     background-color: #FFCB05;
     opacity: 50%;
 }
+
+h1, h2, h3{
+    font-family: 'Oswald';
+    padding: 10px;
+    color: #00274C;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p, ol, ul, figcaption{
+    font-family: 'Montserrat';
+    padding: 10px;
+    line-height: 1.5;
+}
+
+ol, ul{
+    list-style-position: inside;
+}
+
+li{
+    line-height: 1.5;
+    padding: 2px;
+}
+
+main img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+footer{
+    padding: 10px;
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+footer a{
+    color: #FFCB05;
+}
+
+/* index specific code*/
 
 #health .articles-container {
     display: grid;
@@ -100,17 +127,36 @@ nav ul li a:hover{
     color: white;
 }
 
+#health h3{
+    color: white;
+}
+
 #health img {
-    width: 100%; 
-    height: auto; 
+    margin: auto;
 }
 
-footer{
-    padding: 10px;
-    background-color: #00274C;
-    color: #FFCB05;
+/* academic advising specific code*/
+
+#advising{
+    list-style-type: none;
 }
 
-footer a{
-    color: #FFCB05;
+/* #advising img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 10px;
+} */
+
+/* study spaces */
+
+#study {
+    list-style: none;
 }
+
+/* #study img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 10px;
+} */

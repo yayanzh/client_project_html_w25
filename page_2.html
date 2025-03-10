@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald|Montserrat:400,700' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Study Spaces</title>
 </head>
 <body>
     
     <header>
-        <a href = "">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div class = "skip" tabindex="0"><a href = "#main">Skip to Main Content</a></div>
+        <img id = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
     <nav>
         <ul>
             <li><a href = "index.html">Home</a></li>
             <li><a href = "page_1.html">Academic Advising</a></li>
-            <li><a href = "page_2.html">Study Spaces</a></li>
+            <li><a class = "active" href = "page_2.html">Study Spaces</a></li>
             <li><a href = "page_3.html">CAPS</a></li>
         </ul>
     </nav>
-    <h1>Study Spaces at UM</h1>
 </header>
-<main>
+<main id = "main">
+    <h1>Study Spaces at UM</h1>
     <section>
         <h2>About Study Spaces at UM</h2>
         <p>Study Spaces at U-M is a tool designed to help you find and reserve designated study spaces, computer stations, a space for you to take a remote class, or just a dedicated quiet touchdown spot between classes.</p>
@@ -34,7 +37,7 @@
     </section>
     <section>
         <h2>Reserve Study Spaces on Campus</h2>
-        <ul>
+        <ul id = "study">
             <li>
                 <h3>Central Campus</h3>
                 <img src="images/UMSI_fallcampus_10.10.22_7.JPEG" alt="North Quad Building, a large red brick building, on a sunny day against a blue sky.">
